@@ -1,0 +1,22 @@
+[package]
+name = "rust-market"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+reqwest = { version = "0.12.22", features = ["json"] }
+sdl2 = "0.38.0"
+tokio = { version = "1.47.1", features = ["full"] }
+query_args = { path = "./query_args" }
+dotenvy = "0.15.7"
+chrono = { workspace = true, features = ["alloc"] }
+
+[workspace.dependencies]
+dotenvy = "0.15.7"
+chrono = "0.4.41"
+
+[workspace]
+members = [
+  "env",
+  "query_args"
+]

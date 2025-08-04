@@ -1,0 +1,23 @@
+PLAN
+
+pull, parse, and aggregate market data from coinmarketcap
+ create iterator for date ranges ✅
+ add query argument primitives ✅
+ set up environment variables ✅
+ implement api call builder
+ add response object primitives & parser
+ implement json saver & retriever (go both ways from json to response primitives)
+ for now, just save and load json documents (eventually full db implementation?)
+
+create market visualizer based on epoch ticks
+ each tick should allow for variable
+  - color
+  - height
+ and display options should include
+  - tick duration (time which one tick represents)
+
+create tick rendering modes
+ control color based on variables
+  - liquidation per X leverage, Y time to close, Z direction
+  - liquidation per X leverage, Y margin to close, Z direction
+
